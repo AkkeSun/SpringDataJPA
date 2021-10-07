@@ -19,6 +19,7 @@ public class RelationRunner implements ApplicationRunner {
     @Override
     @Transactional
     public void run(ApplicationArguments args) throws Exception {
+
         Session session = entityManager.unwrap(Session.class);
 
         /*****************************
@@ -30,17 +31,18 @@ public class RelationRunner implements ApplicationRunner {
          ******************************/
 
         // casecade를 지정한 entity만 save()
+        /*
         Team team = new Team();
-        team.setName("Korea");
+        team.setName("Japan");
         session.save(team);
 
         // casecade : member1, 2 자동 insert
         Member member1 = new Member();
-        member1.setUsername("sun");
+        member1.setUsername("sun2");
         member1.saveFK(team);
 
         Member member2 = new Member();
-        member2.setUsername("exg");
+        member2.setUsername("exg2");
         member2.saveFK(team);
 
         // casecade : member1, 2 자동 update (exg3 버전만)
@@ -58,5 +60,7 @@ public class RelationRunner implements ApplicationRunner {
         for (int i=0; i<members.size(); i++){
             System.out.println(members.get(i).getUsername());
         }
+
+        */
     }
 }

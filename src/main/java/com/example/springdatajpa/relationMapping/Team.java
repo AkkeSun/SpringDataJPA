@@ -2,6 +2,7 @@ package com.example.springdatajpa.relationMapping;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -35,5 +36,9 @@ public class Team {
 
     @OneToMany(mappedBy = "team", cascade = CascadeType.ALL)
     List<Member> members = new ArrayList<>();
+
+    public String toString(){
+        return "[id] : " + getId() + " / [name] : " + getName();
+    }
 
 }

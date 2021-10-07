@@ -26,11 +26,10 @@ public class BasicRunner implements ApplicationRunner {
         account.setDate(new Date());
         account.setSecret("data");
 
+        // Entity를 사용한 영속화
+        //entityManager.persist(account);
 
-        // 영속화
-      //  entityManager.persist(account);
-
-        // 영속화 후 바로 세션 저장 (org.hibernate.Session)
+        // Hibernate를 사용한 영속화 (org.hibernate.Session)
         /*
         Session session = entityManager.unwrap(Session.class);
         session.save(account);
