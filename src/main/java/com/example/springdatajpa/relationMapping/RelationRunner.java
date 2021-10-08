@@ -30,7 +30,6 @@ public class RelationRunner implements ApplicationRunner {
 
          ******************************/
 
-        // casecade를 지정한 entity만 save()
         /*
         Team team = new Team();
         team.setName("Japan");
