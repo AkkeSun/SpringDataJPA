@@ -1,4 +1,4 @@
-package com.example.springdatajpa.springDataCommon.custom;
+package com.example.springdatajpa.springDataCommon.custom.solo;
 
 import com.example.springdatajpa.relationMapping.Team;
 import org.springframework.data.jpa.repository.JpaRepository;
