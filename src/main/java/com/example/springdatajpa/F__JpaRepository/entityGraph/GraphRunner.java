@@ -20,11 +20,12 @@ public class GraphRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        /*
         Graph2 returnData = graph2Repository.save(new Graph2("test"));
         graph1Repository.save( new Graph1("data1", returnData));
 
         graph1Repository.getById1(1L);
         graph1Repository.getById2(1L);
-
+        */
     }
 }
